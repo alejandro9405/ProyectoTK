@@ -1,0 +1,109 @@
+<div class="panel panel-default" *ngIf=alumno>
+  <div class="panel-heading">Formulario nuevo Alumno</div>
+  <div class="panel-body">
+      <form class="form-horizontal" >
+        <div class="form-group">
+          <label for="aPaterno" class="col-sm-2 control-label">Apelldio Paterno : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.aPaterno}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="aMaterno" class="col-sm-2 control-label">Apellido Materno : </label>
+          <div class="col-sm-9">
+          <p class="form-control">{{alumno.aMaterno}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nombre" class="col-sm-2 control-label">Nombre : </label>
+          <div class="col-sm-9">
+          <p class="form-control">{{alumno.nombre}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sexo" class="col-sm-2 control-label">Sexo : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.sexo}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fNac" class="col-sm-2 control-label">Fecha de Nacimiento : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.fNac}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="curp" class="col-sm-2 control-label">CURP : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.curp}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="domicilio" class="col-sm-2 control-label">Domicilio : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.domicilio}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="colonia" class="col-sm-2 control-label">Colonia : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.colonia}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ciudad" class="col-sm-2 control-label">Ciudad : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.ciudad}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="estado" class="col-sm-2 control-label">Estado : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.estado}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cp" class="col-sm-2 control-label">Codigo Postal : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.cp}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tel" class="col-sm-2 control-label">Telefono : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.tel}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.email}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfc" class="col-sm-2 control-label">RFC : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.rfc}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="escolaridad" class="col-sm-2 control-label">Escolaridad : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.escolaridad}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tRegistro" class="col-sm-2 control-label">Tipo de Registro : </label>
+          <div class="col-sm-9">
+            <p class="form-control">{{alumno.tRegistro}}</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8">
+            <!--<button type="submit" class="btn btn-info" (click)="goBack()">Cancel</button>-->
+             <a  class="btn btn-info" (click)="goBack()">Cancelar</a>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>

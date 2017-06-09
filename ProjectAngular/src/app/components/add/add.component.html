@@ -1,0 +1,113 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Formulario nuevo alumno</div>
+  <div class="panel-body">
+    <form class="form-horizontal" (submit)="addAlumno()">
+  <div class="form-group">
+    <label for="aPaterno" class="col-sm-2 control-label">Apellido Paterno : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.aPaterno" name="aPaterno">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="aMaterno" class="col-sm-2 control-label">Apellido Materno : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.aMaterno" name="aMaterno">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="nombre" class="col-sm-2 control-label">Nombre : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.nombre" name="nombre">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="sexo" class="col-sm-2 control-label">Sexo : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.sexo" name="sexo">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="fNac" class="col-sm-2 control-label">Fecha de Nacimiento : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.fNac" name="fNac">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="curp" class="col-sm-2 control-label">CURP : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.curp" name="curp">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="domicilio" class="col-sm-2 control-label">Domicilio : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.domicilio" name="domicilio">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="colonia" class="col-sm-2 control-label">Colonia : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.colonia" name="colonia">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ciudad" class="col-sm-2 control-label">Ciudad : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.ciudad" name="ciudad">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="estado" class="col-sm-2 control-label">Estado : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.estado" name="estado">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="cp" class="col-sm-2 control-label">Codigo Postal : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.cp" name="cp">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="tel" class="col-sm-2 control-label">Telefono : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.tel" name="tel">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.email" name="email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="rfc" class="col-sm-2 control-label">RFC : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.rfc" name="rfc">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="escolaridad" class="col-sm-2 control-label">Escolaridad : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.escolaridad" name="escolaridad">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="tRegistro" class="col-sm-2 control-label">Tipo de Registro : </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.tRegistro" name="tRegistro">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-success">Guardar</button>
+      <a  class="btn btn-info" (click)="goBack()">Cancelar</a>
+    </div>
+
+  </div>
+</form>
+
+  </div>
+</div>

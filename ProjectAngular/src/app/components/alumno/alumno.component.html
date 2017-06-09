@@ -1,0 +1,50 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>Apellido Paterno</td>
+      <td>Apellido Materno</td>
+      <td>Nombre</td>
+      <td>Sexo</td>
+      <td>Fecha de Nacimiento</td>
+      <td>CURP</td>
+      <td>Domicilio</td>
+      <td>Colonia</td>
+      <td>Ciudad</td>
+      <td>Estado</td>
+      <td>Codigo Postal</td>
+      <td>Telefono</td>
+      <td>Email</td>
+      <td>RFC</td>
+      <td>Escolaridad</td>
+      <td>Tipo de Registro</td>
+      <td width=275 align="center">Action</td>
+    </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let alumno of alumnos">
+        <td>{{alumno.aPaterno}}</td>
+        <td>{{alumno.aMaterno}}</td>
+        <td>{{alumno.nombre}}</td>
+        <td>{{alumno.sexo}}</td>
+        <td>{{alumno.fNac}}</td>
+        <td>{{alumno.curp}}</td>
+        <td>{{alumno.domicilio}}</td>
+        <td>{{alumno.colonia}}</td>
+        <td>{{alumno.ciudad}}</td>
+        <td>{{alumno.estado}}</td>
+        <td>{{alumno.cp}}</td>
+        <td>{{alumno.tel}}</td>
+        <td>{{alumno.email}}</td>
+        <td>{{alumno.rfc}}</td>
+        <td>{{alumno.escolaridad}}</td>
+        <td>{{alumno.tRegistro}}</td>
+        <td width=275>
+            <a class="btn btn-info" routerLink="/show/{{alumno.id}}">Ver</a>
+            <a class="btn btn-success" routerLink="/edit/{{alumno.id}}">Editar</a>
+            <a class="btn btn-danger" (click)="deleteAlumno(alumno.id)">Eliminar</a>
+        </td>
+     </tr>
+
+  </tbody>
+
+</table>
